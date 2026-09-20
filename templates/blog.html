@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Our Blog - Dragonfire Meadery{% endblock %}
+
+{% block content %}
+
+  <div class="main">
+    <div class="container py-5">
+      <div class="row text-center">
+        {% for blog in posts %}
+        <div class="col mb-4">
+          <div class="card shadow" style="width: 25rem;">
+            {% if blog.featured_image %}
+            <img src="{{ blog.featured_image }}" class="card-img-top">
+            {% endif %}
+            <div class="card-body">
+              <h5 class="card-title">{{ blog.title }}</h5>
+              <p class="card-text text-muted">{{ blog.content[:120] }}...</p>
+              <a href="/blog_posts/{{ blog.id }}" class="btn btn-primary">Read More</a>
+              <p class="card-text mt-2">
+                <small class="text-muted">Posted on {{ blog.date_posted }}</small>
+              </p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

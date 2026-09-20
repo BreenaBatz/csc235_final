@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}New Upcoming Event{% endblock %}
+
+{% block content %}
+
+<div class="container py-5">
+    <h1 class="title">Create New Upcoming Event</h1>
+
+    <form method="POST">
+        <div class="mb-3">
+            <label class="form-label">Title</label>
+            <input type="text" name="title" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Date</label>
+            <input type="text" name="date" class="form-control" placeholder="May 2026">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Time</label>
+            <input type="text" name="time" class="form-control" placeholder="7:00 PM">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Location</label>
+            <input type="text" name="location" class="form-control" placeholder="123 Main St, Anytown, USA">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Add Event</button>
+    </form>
+</div>
+
+{% endblock %}

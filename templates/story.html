@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+ 
+{% block title %}Mead Story - Dragonfire Meadery{% endblock %}
+ 
+{% block content %}
+
+<div class="container py-5">
+  <div class="row align-items-start story-page">
+    <div class="col-md-5 mb-4">
+      <img src="{{ mead.img }}" class="img-fluid rounded" alt="{{ mead.name }}">
+      <p class="card-text">Artwork by: {{mead.artist}}</p>
+    </div>
+    <div class="col-md-7 story-text-col">
+      <h1 class="title">{{ mead.name }}</h1>
+      <h3 class="story-heading">Type: {{ mead.type }}</h3>
+      <h4 class="story-heading">Flavor: {{ mead.flavor }}</h4>
+      <h4 class="story-heading">Price: ${{ mead.price }}</h4> 
+      {% if mead.status == "out" or mead.status == "bs" or mead.status == "d" %}
+                  <a href="{{ mead.url }}" class="btn disabled" target="_blank">Buy Now</a>
+                {% else %}
+                  <a href="{{ mead.url }}" class="btn" target="_blank">Buy Now</a>
+                {% endif %}
+      <p class="story-paragraph mt-4">{{ mead.desc }}</p>
+      <h3 class="story-heading">Story of {{ mead.name }}:</h3>
+      <p class="story-paragraph">{{ mead.story }}</p>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}

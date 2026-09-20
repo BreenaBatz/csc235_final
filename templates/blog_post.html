@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+ 
+{% block title %}Our Blog - Dragonfire Meadery{% endblock %}
+ 
+{% block content %}
+
+<div class="container py-5">
+
+    <h1 class="title">{{ post.title }}</h1>
+
+    <img src="{{ post.image }}" class="img-fluid mb-4" style="max-width:500px; border-radius:10px;">
+
+    <p class="text-muted">Posted on {{ post.date_posted }}</p>
+
+    <p class="mt-4">{{ post.content | safe }}</p>
+
+</div>
+
+{% endblock %}

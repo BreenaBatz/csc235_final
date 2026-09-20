@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+ 
+{% block title %}Find Us - Dragonfire Meadery{% endblock %}
+ 
+{% block content %}
+
+<div class="main findus-page">
+  <div class="container py-5">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <aside>
+          <div id="seasonal">
+            <h5 class="card-title">Seasonal Shows</h5>
+            <p>Torrington Renaissance Faire:</p>
+            <p>Torrington CT April 25, 2026 11-6</p>
+            <p>South Windsor Apple Festival:</p>
+            <p>South Windsor CT 10/3,2026 9-5</p>
+          </div>
+
+          <div id="markets">
+            <h5 class="card-title">Farmers Markets</h5>
+            <p><b>Stonington</b> alternating Saturdays 9am-12pm</p>
+            <p><b>Coventry</b> occasional Sundays 10am-1pm</p>
+            <p><b>Wethersfield</b> Thursdays 3pm-6pm</p>
+            <p><b>Manchester</b> Wednesdays 4pm-7pm</p>
+            <p><b>Tolland</b> occasional Sundays 10am-1pm</p>
+            <p><b>Glastonbury</b> Tuesdays 3pm-6pm</p>
+            <p><b>South Windsor</b> alternating Saturdays 9am-12pm</p>
+            <p><b>Cromwell</b> alternating Fridays 4pm-7pm</p>
+          </div>
+
+          <div id="charity">
+            <h5 class="card-title">Charity Events</h5>
+            <p><b>Thread City Hop Fest</b> 5/17/26 Willimantic</p>
+            <p><b>Beardsley Zoo Wild Wine Beer and Food Safari</b> 6/6/26</p>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Main Content -->
+      <div class="col-lg-9 col-md-12">
+        <div class="mb-5">
+          <h2 class="title">Our Locations</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Store Name</th>
+                  <th>Address</th>
+                  <th>City</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for store in stores %}
+                <tr>
+                  <td>{{ store.name }}</td>
+                  <td>{{ store.address }}</td>
+                  <td>{{ store.city }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="title">Upcoming Events</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Location</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for event in events %}
+                <tr>
+                  <td>{{ event.title }}</td>
+                  <td>{{ event.date }}</td>
+                  <td>{% if event.time %}{{ event.time }}{% endif %}</td>
+                  <td>{% if event.location %}{{ event.location }}{% endif %}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+{% endblock %}

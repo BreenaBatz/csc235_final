@@ -1,0 +1,502 @@
+:root{
+    --title:'Black Chancery', cursive;
+    --mainText: georgia, palatino, book antiqua, palatino linotype, serif;
+    --color1: #6a6c42;
+    --color2: #d9dac5;
+    --color3: #353621;
+    --color4:#e4e5d6;
+    
+}
+
+header {
+    margin: 0;
+    padding: 0;
+}
+
+
+.title{
+    text-align:center;
+    font-family: var(--title)
+}
+
+.card-title{
+    font-size:2em;
+    font-family: var(--title);
+    text-align:center;
+}
+
+#mainTitle{
+    font-size: 8em;
+}
+
+#mead-maker{
+    font-size:1.25em;
+}
+.image.mead-maker{
+margin-left:3rem;
+}
+
+.secondary{
+    font-family:var(--mainText);
+    font-size: 1.5em;
+    text-align:right;
+    padding-right:22em;
+}
+
+.card-text{
+    font-family:var(--mainText);
+    font-size: 1.25em;
+    text-align:center;
+}
+
+.question{
+    font-family: var(--title);
+    font-size: 1.5rem!important;
+    text-align:center;
+    background-color: var(--color3)!important;
+    color: var(--color4)!important;
+    padding-top: 1.5em;
+    padding-bottom: .5em;
+    cursor: pointer;
+}
+.question::after {
+    filter: brightness(0) invert(1);
+}
+
+
+.answer{
+    margin:2.5em;
+    margin-top:1em;
+    padding-left:4em;
+    padding-right:4em;
+    font-family:var(--mainText);
+}
+
+.list{
+    text-align:left;
+    padding-left:5em;
+}
+
+#form{
+    padding-left:15em;
+    padding-right:15em;
+    margin-top:3em
+}
+
+aside{
+    
+    background-color: var(--color3);
+    width: 100%;
+    max-width: 25rem; /* keeps your nice box size */
+    margin-right:5rem !important;
+    border-radius:2.5em;
+    text-align:center;
+    color:var(--color2);
+}
+
+/* FIND US PAGE ONLY */
+.findus-page .col-lg-3 {
+    padding-left: 0 !important;
+}
+
+.findus-page aside {
+    margin: 0 1rem 2rem 0;
+    max-width: 22rem;
+}
+
+.findus-page .col-lg-9 {
+    padding-left: 2rem !important;
+    padding-right: 0 !important;
+}
+
+.findus-page .table {
+    width: 100% !important;
+    border: 2px solid var(--color3) !important;
+    border-radius: 0.5rem;
+}
+
+
+.events-layout {
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 4rem;
+}
+
+.packages-section {
+    margin-top:-10em;
+}
+
+
+#footer{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background-color:var(--color3);
+    color: var(--color2)
+}
+
+#nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background-color:var(--color3);
+    display:flex;
+    z-index: 1000;
+    height: 3.5rem !important;
+}
+
+.nav-link{
+    color: var(--color2) !important;
+    font-family:var(--mainText);
+}
+
+#seasonal, #markets, #charity{
+    font-family:var(--mainText);
+    padding-left:2em;
+    padding-right:1em;
+    padding-bottom:1em;
+    padding-top:1.5em;
+}
+
+#background{
+    background-color: var(--color2);
+}
+
+.row {
+    margin: 1em 0; /* top/bottom only */
+}
+
+
+.email-list{
+    margin: 2rem auto;
+    max-width: 600px;
+    font-family: var(--mainText);
+}
+
+.message{
+    border: 1px solid #ccc;
+    min-height: 20px;
+    width: 200px;
+    padding: 5px;
+}
+
+
+.main{
+    margin-top:5.25em;
+}
+
+.container2 {
+  display: flex;
+  align-items: center; 
+  gap: 20px;           
+}
+
+.image {
+  max-width: 300px;    
+  height: auto;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    margin-top:1.5em;
+}
+
+
+
+.footer-text{
+    font-family: var(--mainText);
+    text-align:center;
+    margin:4em;
+    padding:.5em;
+    display: inline;
+}
+
+#logo{
+    border-radius: 100%;
+    margin-bottom: 1em;
+    width:2.5em;
+    height:2.5em;
+}
+
+.mead-maker{
+    margin: 2rem auto;
+    border-radius:3em;
+}
+
+
+.blog-post{
+    border:.25em solid var(--color3);
+    border-radius: 5px; 
+}  
+
+
+.findus-layout {
+    display: flex;
+    align-items: flex-start;
+    margin-top:1em;
+}
+
+
+
+.table {
+    border: 2px solid var(--color3) !important;
+    border-radius: 0.5rem;
+}
+
+
+
+th{
+    padding-right:2em;
+    padding-left:2em;
+    font-family: var(--mainText);
+    background-color: var(--color1) !important;
+    color: var(--color4) !important;
+    
+}
+
+td{
+    font-family: var(--mainText);
+    background-color: var(--color4) !important;
+}
+
+#amenities, #big-day{
+    font-family: var(--mainText);
+    padding-left:2.5em;
+    padding-right:2.5em;
+    padding-bottom:2em;
+    padding-top:1.5em;
+}
+#flavors{
+    text-align:left;
+}
+
+#packages{
+    padding-top:5em;
+    padding-right:5.5em;
+}
+
+#contact{
+    font-family:var(--mainText);
+    text-align:center;
+
+}
+
+.story-page {
+    margin-top: 3em;
+}
+
+.story-text-col {
+    font-family: var(--mainText);
+}
+
+.story-heading {
+    margin-bottom: 0.75em;
+}
+
+.story-paragraph {
+    margin-bottom: 1.5em;
+}
+
+.story {
+    display: flex;
+    align-items: center;
+    font-family:var(--mainText);
+    padding-left:2em;
+    padding-right:1em;
+    padding-bottom:1em;
+    padding-top:1.5em;
+}
+
+.story-text{
+    float:right;
+}
+
+.btn{
+    background-color: var(--color3) !important;
+    color: var(--color2) !important;
+    font-family: var(--mainText) !important;
+    border-radius: 2.5em;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-color: var(--color3) !important;
+}
+
+
+.btn:hover {
+    background-color: var(--color1) !important;
+    color: var(--color2) !important;
+    border-color: var(--color3) !important;
+}
+
+
+/* Mobile dropdown background */
+.navbar-collapse {
+    background-color: var(--color3);
+    padding-left: 1rem;
+}
+
+.navbar-toggler {
+    border-color: var(--color2); /* light border */
+}
+
+.navbar-toggler-icon {
+    filter: invert(1); /* makes the icon light */
+}
+
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding-top: 0.01rem;
+        padding-bottom: 0.01rem;
+    }
+
+    .navbar-brand img {
+        height: 2rem;
+    }
+
+    .navbar-toggler {
+        padding: 0.1rem 0.3rem;
+    }
+
+  .main {
+    margin-top: 4.5rem;
+    padding: 0 1rem;
+  }
+
+  /* Kill horizontal scroll */
+  body, html {
+    overflow-x: hidden;
+  }
+
+  #mainTitle {
+        font-size: 3rem;
+        line-height: 1.1;
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    .secondary {
+        font-size: 1rem;
+        text-align: center;
+        padding: 0;
+    }
+
+  /* Center titles and secondary text */
+  .secondary {
+    text-align: center;
+    padding-right: 0;
+    font-size: 1.1rem;
+  }
+
+  .row {
+    margin: 0;
+  }
+
+  /* Email list: no huge left margin */
+  .email-list {
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  /* Aside + find-us layout: stack instead of side-by-side */
+  .findus-layout, .events-layout {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  aside {
+    width: 100% ;
+    margin: 0;
+  }
+
+  /* Tables: full width, no overflow */
+  .container.py-5 {
+    padding: 1rem 0;
+  }
+
+  table {
+    font-size: 0.9rem;
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  th, td {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  /* Question/answer blocks: no giant side margins */
+  .question {
+    
+    margin-right: 1rem;
+  }
+
+  .answer {
+    margin: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Forms: no 15rem padding */
+  #form {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 2rem;
+  }
+
+  /* Cards: let Bootstrap handle width */
+  .card {
+    width: 100% !important;
+  }
+
+  .card-img-top {
+    max-height: 220px;
+  }
+
+  /* Footer: avoid covering content on tiny screens */
+  #footer {
+    position: static;
+    text-align: center;
+  }
+
+  .container2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .image {
+        order: 2; /* image after title + short description */
+    }
+
+    .answer.mead-maker {
+        order: 3; /* long story after image */
+    }
+
+    #mead-maker {
+        order: 1; /* short description stays above image */
+    }
+
+  .answer {
+    margin: 1rem 0;
+    padding: 0 1rem;
+  }
+
+  .row .col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .events-layout {
+    margin-top: 1rem;
+    
+}
+
+}
+
+

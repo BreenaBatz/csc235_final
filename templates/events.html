@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+ 
+{% block title %}Events - Dragonfire Meadery{% endblock %}
+ 
+{% block content %}
+
+<div>
+    <h2 class="card-title">Event Space Rentals</h2>
+    <p class="card-text"> Celebrate your story with handcrafted mead made in small batches in Coventry, 
+        Connecticut. Whether you’re planning an intimate wedding, a cozy shower, or a spirited bachelor/bachelorette gathering,
+        Dragonfire Meadery offers a one-of-a-kind experience rooted in tradition and flavor.
+        The Dragonfire Meadery facility can be rented for parties, special events, fundraisers and gatherings. 
+        We offer different packages based on the space needed for the event.
+        <br>Arrangements must be made in advance to rent the space. Call or email for availability.</p>
+</div>
+
+    <div class="events-layout">
+
+    <aside>
+        <h3 class="card-title">Amenities</h3>
+        <div id="amenities" class="card-text">
+            <p><b>Includes Features</b></p>
+        <p>All of our Private event rentals include:</p>
+        <ul>
+            <li>Tables/chairs/stools for guests and food.</li>
+            <li>Discussion about mead and the process of making mead. (optional) </li>
+            <li>Meads, mead cocktails, mocktails per person based on package. (prices may vary)</li>
+        </ul>
+        <p><b>PARKING:</b> We have limited parking available on site. ( about 6 cars) so we 
+            do recommend carpooling for smaller groups. For anything more than that shuttle services 
+            can be provided at an additional fee.</p>
+        </div>
+
+        <h3 class="card-title">Mead for your Big Day</h3>
+        <div id="big-day" class="card-text">
+            <p>Offer your guests something unforgettable with curated mead selections.</p>
+        <p>How much mead will I need for my event? 
+            <br>On average a bottle will serve about 4 people a 4-6 oz glass.</p>
+        <p>Available Mead Flavors</p>
+        <ul id="flavors">
+            <li>Fafnir - Traditional Honey (sweet)</li>
+            <li>Weewillmekq - Blueberry (semi-sweet)</li>
+            <li>Muirdris - Elderberry (semi dry)</li>
+            <li>Ladon - Apple (semi-sweet)</li>
+        </ul>
+        </div>
+    </aside>
+
+        <div class="container py-4 packages-section">
+            <div class="row text-center">
+                <h3 class="card-title" id="packages">Packages</h3>
+      <div class="container py-4">
+        <div class="row text-center">
+          <div class=" col-md-5 mb-4">
+            <div class="card shadow h-100">
+              <div class="card-body">
+                <h5 class="card-title">Dragon’s Table</h5>
+                <div class="card-text">
+                    <ul class="text-start">
+                  <li>8-15 guests maximum</li>
+                  <li>Space rental: $200/hr min. 2 hrs</li>
+                  <li>$25 per person, includes 2 drink tokens</li>
+                  <li>Additional drinks available for purchase.</li>
+                  <li>Reservation of the ‘big table’</li>
+                </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5 mb-4">
+            <div class="card shadow h-100">
+              <div class="card-body">
+                <h5 class="card-title">Golden Grove</h5>
+                <div class="card-text">
+                    <p>Only available during non tasting room hours.</p>
+                    <ul class="text-start">
+                  <li>29 guest maximum</li>
+                  <li>Space rental: $150/hr min 2 hrs.</li>
+                  <li>$25 per person, includes 2 drink tokens</li>
+                  <li>Additional drinks available for purchase.</li>
+                </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-5 mb-4">
+            <div class="card shadow h-100">
+              <div class="card-body">
+                <h5 class="card-title">Queen Bee</h5>
+                <div class="card-text">
+                <p>Tasting room will be closed to the public.</p>
+                <ul class="text-start">
+                  <li>20-29 guests</li>
+                  <li>Space rental: $250/hr min 3 hrs.</li>
+                  <li>$25 per person, includes 2 drink tokens</li>
+                  <li>Additional drinks available for purchase.</li>
+                </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-5 mb-4">
+            <div class="card shadow h-100">
+              <div class="card-body">
+                <h5 class="card-title">The Dragon's Private Cellar</h5>
+                <div class="card-text">
+                <p>Tasting room will be closed to the public.</p>
+                <ul class="text-start">
+                  <li>29 guest maximum</li>
+                  <li>Space rental: $250/hr min 4 hrs.</li>
+                  <li>$50 per person, includes tastings of 4 meads and one specialty mead.</li>
+                  <li>2 drink tokens per person</li>
+                  <li>Additional drinks available for purchase.</li>
+                </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+            </div>
+
+            <p class="card-text"><em>*Custom options available on case by case basis*</em></p>
+
+            <div id="contact">
+                <p><b>Contact Us</b></p>
+                <p>Reach out to us for more information about our event space rental packages. We're here to help you plan an unforgettable gathering.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

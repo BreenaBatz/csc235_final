@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+ 
+{% block title %}Our Meads - Dragonfire Meadery{% endblock %}
+ 
+{% block content %}
+
+
+<!--start of meads with links to the shop page to purchase/add to cart?
+using cards with image and button-->
+  <!-- using loop to go through the database -->
+
+  <div class="main">
+    <div class="container py-5">
+      <div class="row text-center">
+          {% for mead in meads %}
+        <div class="col mb-4">
+          <div class="card shadow" style="width: 25rem;">
+            <img src="{{mead.img}}" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">{{mead.name}}</h5>
+                <p class="card-text">{{mead.type}} {{mead.flavor}}</p>
+                <p class="card-text">{{mead.desc}}</p>
+                <p class="card-text">Price: ${{ mead.price }}</p>
+
+                {% if mead.status == "out" %}
+                  <p class="text-danger"><b>Out of Stock</b></p>
+                {% elif mead.status == "limited" %}
+                  <p class="text-danger"><b>Limited Edition!</b></p>
+                {% elif mead.status == "bs"%}
+                  <p class="text-danger"><b>Only at The Battle Standard</b></p>
+                {% elif mead.status == "d" %}
+                  <p class="text-danger"><b>Discontinued</b></p>
+                {% endif %}
+                <a href="/story/{{ mead.name | urlencode }}" class="btn ">Read Story</a>
+
+                {% if mead.status == "out" or mead.status == "bs" or mead.status == "d" %}
+                  <a href="{{ mead.url }}" class="btn disabled" target="_blank">Buy Now</a>
+                {% else %}
+                  <a href="{{ mead.url }}" class="btn" target="_blank">Buy Now</a>
+                {% endif %}
+              
+
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  
+{% endblock %}
